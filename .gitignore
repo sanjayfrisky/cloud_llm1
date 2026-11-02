@@ -1,0 +1,51 @@
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / C-extensions
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caching and Vector DB local persistence
+chroma_db/
+chroma_data/
+.chroma/
+*.chroma
+models/
+huggingface/
+.cache/
+hf_cache/
+
+# Uploads / user documents / test logs
+# (Keep uploads directory structure via .gitkeep if needed, ignore large uploaded docs)
+uploads/*
+!uploads/.gitkeep
+*.log
+verification.log
+
+# Testing, coverage and linting
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# IDE & Editor configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
